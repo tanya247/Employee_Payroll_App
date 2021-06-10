@@ -1,180 +1,226 @@
 body{
-    margin: 0;
-    height: 100%;
+  margin: 0;
+  height: 100%;
 }
+
 .header{
-    padding: 15px 0;
-    background-color: #ffffff;
+  padding: 15px 0;
+  background-color: #ffffff;
 }
+
 .header-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border: 0px solid green;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid green;
 }
+
 .logo-content{
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    border: 0px solid green;
-    width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 0px solid green;
+  width: 80%;
 }
-.logo-content-img{border: solid 0px #42515f;}
+
+.logo-content-img {
+  border: solid 0px #42515f;
+}
 
 .emp-text{
-    font: normal normal bold 20px/25px Montserrat;
-    font-family: "Montserrat",sans-serif;
-    letter-spacing: 0px;
-    color: #82a70c;
-    text-transform: capitalize;
+  font: normal normal bold 18px Montserrat;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0px;
+  color: #82a70c;
+  text-transform: capitalize;
 }
-.emp-payroll{color: #42515f;}
-*{box-sizing: border-box;}
+
+.emp-payroll{
+  color: #42515f;
+}
+
+*{
+  box-sizing: border-box;
+}
+
 .form-content{
-    min-height: calc(100%-80px);
-    background-color: #f7f7f7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 0px solid green;
+  min-height: calc(100% - 80px);
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid green;
 }
+
 .form{
-    width: 65%;
-    padding: 44px 60px;
-    background: #ffffff 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000029;
-    border: 1px solid #f5f5f5;
-    border-radius: 8px;
-    opacity: 1;
+  width: 65%;
+  padding: 44px 60px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #f5f5f5;
+  border-radius: 8px;
+  opacity: 1;
 }
-.form-content{
-    font: normal normal bold 24px/37px Roboto;
-    letter-spacing: 0px;
-    color: #42515f;
-    text-transform: capitalize;
-    opacity: 1;
-    padding-bottom: 20px;
+
+.form-head{
+  font: normal normal bold 28px/37px Roboto;
+  letter-spacing: 0px;
+  color: #42515f;
+  text-transform: capitalize;
+  opacity: 1;
+  padding-bottom: 20px;
 }
+
 .row-content{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 10px;
-    align-items: center;
-    border:0px solid green;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  align-items: center;
+  border: 0px solid green;
 }
+
 .label{
-    min-width: 140px;
+  min-width: 140px;
 }
+
 label{
-    padding: 12px 12px 12px 0;
-    display: inline-block;
+  padding: 12px 12px 12px 0;
+  display: inline-block;
 }
+
 .text{
-    font-size: 16px;
-    color: #42515f;
-    opacity: 1;
-    font-family: Roboto;
+  font-size: 16px;
+  color: #42515f;
+  opacity: 1;
+  font-family: Roboto;
 }
+
 .input{
-    width:100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
 }
-.profile-ratio-content{
-    display: flex;
-    flex-direction: row;
+
+.profile-radio-content{
+  display: flex;
+  flex-direction: row;
 }
-.profile-ratio-content > label{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+
+.profile-radio-content > label{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
+
 .profile{
-    width: 40px;
-    border-radius: 50%;
-    margin-left: 12px;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 12px;
 }
-.buttonParent {
-    display: flex;
-    margin-bottom: 10px;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
+
+select{
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font: normal normal normal 16px Roboto;
+  letter-spacing: 0px;
+  color: #42515f;
+  background-color: transparent;
+}
+
+.button-content{
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.button{
+  font-size: 20px;
+  font-family: Roboto;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #42515f;
+  opacity: 1;
+  background: transparent;
+  border: none;
+  font-weight: 400;
+  min-width: 140px;
+  padding: 7px 7px;
+  border: 1px solid #707070;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.submitButton:hover{
+  margin-top: 2px;
+  color: whitesmoke;
+  border: none;
+  background-color: green;
+  margin-right: 30px;
+  opacity: 0.8;
   
-  .button {
-    font-size: 20px;
-    font-family: Roboto;
-    letter-spacing: 0px;
-    color: #42515f;
-    opacity: 1;
-    background: transparent;
-    border: none;
-    font-weight: 400;
-    min-width: 140px;
-    padding: 7spx 7px;
-    border: 1px solid #707070;
-    cursor: pointer;
-  }
-  
-  .submitButton {
-    border: none;
-    border: 1px solid #f5f5f5;
-    margin-right: 30px;
-  }
-  
+}
+
+.cancelButton:hover{
+  background-color: grey;
+  margin-left: 10px;
+  text-decoration: none;
+  text-align: center;
+  text-decoration: none;
+}
+
+.resetButton:hover{
+  margin-left: 10px;
+  background-color: grey;
+}
+
+/*.submit-reset{
+  margin-left: 5px;
+  margin-right: 5px;
+} */
+
+@media only screen and (max-width:960px){
   .cancelButton {
-    text-decoration: none;
-    text-align: center;
-  }
-  
-  @media only screen and (max-width: 960px) {
-    .cancelButton {
       margin-left: 0px;
-    }
-    .form {
-      width: 90%;
-      padding: 44px 20px;
-    }
   }
-  
-  @media only screen and (max-width: 600px) {
-    .form {
+  .form{
+      width: 85%;
+      padding: 44px 20px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .form{
       margin-top: 10px;
-    }
-  
-    .row {
+  }
+  .row{
       flex-direction: column;
-    }
-  
-    .uploadButton {
+  }
+  .uploadButton{
       justify-content: flex-start;
-    }
-    .profile-radio-content {
+  }
+  .profile-radio-content{
       flex-flow: wrap;
-    }
-  
-    .submit-reset {
+  }
+  .submit-reset{
       width: 100%;
       display: flex;
       flex-grow: 1;
       flex-direction: row-reverse;
-      justify-content: 20px;
-      margin-top: 20px;
-    }
-  
-    .submitButton {
+      justify-content: space-between;
+      margin-bottom: 20px;
+  }
+  .submitButton{
       margin: 0;
-    }
-  
-    .buttonParent {
-      margin: 0;
-    }
-  
-    .buttonParent {
+      
+  }
+  .button-content{
       flex-direction: column-reverse;
       align-items: flex-start;
-    }
+  }
 }
